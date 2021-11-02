@@ -4,11 +4,7 @@ function seed(a, b, c) {
 }
 
 function same([x, y], [j, k]) {
-  let first = [x, y];
-  let second = [j, k];
-
-  let final = first === second ? true : false;
-  return final;
+  return x === y && j === k;
 }
 
 // The game state to search for `cell` is passed as the `this` value of the function.

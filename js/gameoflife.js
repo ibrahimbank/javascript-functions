@@ -1,6 +1,8 @@
 function seed(a, b, c) {
-  let arr = [a, b, c];
-  return arr;
+  // let arr = [a, b, c];
+  // return arr;
+
+  return Array.prototype.slice.call(arguments);
 }
 
 function same([x, y], [j, k]) {
